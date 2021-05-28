@@ -1,0 +1,31 @@
+Fråga 1 
+ När användaren gör Post-request till /api/auth, 
+ så kollar i databasen om email 
+ som användaren angett finns eller inte, och ifall hittar vi inte emailet så sckikar 
+ ett meddelande till användaren som säger att ( Your credentials is wrong) .. 
+
+
+ Dessutom vi kollar lösenord som användaren angett och jämföra det med lösenordet 
+ som vi har i databasen, och ifall lösenoredet är inte instämmer med det som vi har i databasen,
+ då sckikar ett meddelande till användaren som säger att ( Invalid email or password ) 
+
+
+Fråga 2 
+När användaren ska skapa en order så första steget vi kollare om anvndaren är inloggad
+eller inte .. Om hen är inloggad så hämtar vi produkter som hen har valt och räknar 
+ut produkter pris genom dubbel loop operation, och sedan sparar vi allt i databasen .. 
+Ifall användaren ska skapa en order utan att lägga in något produkt,
+då ska visa upp ett meddelande som säger att ( Cart can not be empty )
+
+
+
+timeStamp: För att visa den datum när användaren gör sin beställning
+
+status: Om användaren är inte klar med beställning så status ska ser ut som 'inProcess',
+
+items: För att visa alla produkter som användaren har beställt
+
+orderValue: För att visa priser sum av alla produkter som användaren har beställ
+
+
+
